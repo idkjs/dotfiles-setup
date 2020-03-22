@@ -1,0 +1,18 @@
+# Custom aliases
+alias vi="nvim"
+alias vim="nvim"
+alias tmn="tmux new-session -s"
+alias tma="tmux attach -t"
+alias tml="tmux ls"
+alias tmk="tmux kill-session -t"
+alias tmd="tmux detach -a"
+alias y="yarn"
+alias fdns="sudo dscacheutil -flushcache"
+# visual studio code. aliases to code insiders
+
+# function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
+
+# reload terminal after dotfile changes
+# alias reload="source ~/.zshrc"
+# alias reload="echo -e "\\n\\nRunning on macOS""
+alias macv="sw_vers"
