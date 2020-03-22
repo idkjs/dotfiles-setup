@@ -1,11 +1,11 @@
 #!/usr/bin/env
 
-# echo "Read through this file first. Hit ctrl+c now."
-# read -n 1
+echo "Read through this file first. Hit ctrl+c now."
+read -n 1
 
 # Disable Gatekeeper (unidentified developer)
-# echo "Disable Gatekeeper (unidentified developer)"
-# sudo spctl --master-disable
+echo "Disable Gatekeeper (unidentified developer)"
+sudo spctl --master-disable
 
 echo -e "\\n\\nRunning on macOS"
 
