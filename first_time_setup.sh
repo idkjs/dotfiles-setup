@@ -1,7 +1,7 @@
 #!/usr/bin/env
 
 echo "Read through this file first. Hit ctrl+c now."
-read -n 1
+# read -n 1
 
 # Disable Gatekeeper (unidentified developer)
 echo "Disable Gatekeeper (unidentified developer)"
@@ -48,5 +48,8 @@ source scripts/osx.sh
 
 echo 'Dock Setup'
 source scripts/dock.sh
+
+# add "$(fnm env --multi)" to `~/.zshrc`
+echo "$(fnm env --multi)" >> .zshrc
 
 echo "Done. Reload your terminal!"
