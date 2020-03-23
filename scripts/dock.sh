@@ -1,5 +1,5 @@
 #1/bin/bash
-
+# unused but nice example
 # Remove Dock items
 echo -b 'Setting defaults for Dock...'
 

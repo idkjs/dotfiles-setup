@@ -45,9 +45,9 @@ source scripts/symlink.sh
 
 echo 'MacOS Setup'
 source scripts/osx.sh
-
-echo 'Dock Setup'
-source scripts/dock.sh
+# unused
+# echo 'Dock Setup'
+# source scripts/dock.sh
 
 # add "$(fnm env --multi)" to `~/.zshrc`
 echo "$(fnm env --multi)" >> .zshrc

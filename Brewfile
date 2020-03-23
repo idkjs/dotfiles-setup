@@ -21,6 +21,7 @@ brew "exa"
 
 # command line fuzzy-finder https://github.com/junegunn/fzf
 brew "fzf"
+
 # https://github.com/whalebrew/whalebrew
 # Whalebrew creates aliases for Docker images so you can run them as if they were native commands. It's like Homebrew, but with Docker images.
 
@@ -95,7 +96,6 @@ brew "zsh"
 brew "zsh-completions"
 
 cask "discord"
-# cask "kitty"
 cask "iterm2" 
 cask "font-iosevka-nerd-font"
 
@@ -109,8 +109,6 @@ cask "chromium"
 cask "imageoptim"
 cask "licecap"
 cask "little-snitch"
-cask "focus"
-# cask "macvim"
 cask "micro-snitch"
 cask "postico"
 cask "postman"
