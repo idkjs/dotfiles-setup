@@ -66,8 +66,6 @@ brew "schniz/tap/fnm"
 # https://github.com/koalaman/shellcheck
 brew "shellcheck"
 
-# https://github.com/superfly/fly
-# brew "superfly/brew/fly"
 
 # sed replacemnet https://github.com/chmln/sd
 brew "sd"
@@ -97,7 +95,7 @@ brew "zsh"
 brew "zsh-completions"
 
 cask "discord"
-cask "kitty"
+# cask "kitty"
 cask "iterm2" 
 cask "font-iosevka-nerd-font"
 
@@ -112,7 +110,7 @@ cask "imageoptim"
 cask "licecap"
 cask "little-snitch"
 cask "focus"
-cask "macvim"
+# cask "macvim"
 cask "micro-snitch"
 cask "postico"
 cask "postman"

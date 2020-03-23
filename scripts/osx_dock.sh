@@ -106,6 +106,9 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-br-corner -int 5
 defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Create macOS Dock recent items stacks
+# https://www.intego.com/mac-security-blog/unlock-the-macos-docks-hidden-secrets-in-terminal/
+defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"list-type" = 1;}; "tile-type" = "recents-tile";}';
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
@@ -114,4 +117,5 @@ for app in "Activity Monitor" \
 	"Dock"; do
 	killall "${app}" &> /dev/null
 done
+# killall Dock
 echo "Done: DOCK. Note that some of these changes require a logout/restart to take effect."
