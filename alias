@@ -13,3 +13,13 @@ alias fdns="sudo dscacheutil -flushcache"
 # reload terminal after dotfile changes
 echo "fresh terminal"
 alias reload="source ~/.zshrc"
+
+function __gcd {
+  if [ "$1x" != "x" ]; then
+    git clone "https://github.com/$1"
+    DIRNAME="$(cut -d'/' -f2 <<<$1)"
+    cd "$DIRNAME"
+  fi
+}
+
+alias gcd='__gcd'

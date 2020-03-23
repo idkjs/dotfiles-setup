@@ -77,9 +77,6 @@ defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
 # Warn about fraudulent websites
 defaults write com.apple.Safari WarnAboutFraudulentWebsites -bool true
 
-# Disable plug-ins
-defaults write com.apple.Safari WebKitPluginsEnabled -bool false
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2PluginsEnabled -bool false
 
 # Disable Java
 defaults write com.apple.Safari WebKitJavaEnabled -bool false
@@ -90,18 +87,15 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write com.apple.Safari WebKitJavaScriptCanOpenWindowsAutomatically -bool false
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaScriptCanOpenWindowsAutomatically -bool false
 
-# Disable auto-playing video
-#defaults write com.apple.Safari WebKitMediaPlaybackAllowsInline -bool false
-#defaults write com.apple.SafariTechnologyPreview WebKitMediaPlaybackAllowsInline -bool false
-#defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2AllowsInlineMediaPlayback -bool false
-#defaults write com.apple.SafariTechnologyPreview com.apple.Safari.ContentPageGroupIdentifier.WebKit2AllowsInlineMediaPlayback -bool false
-
 # Enable “Do Not Track”
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
 # Update extensions automatically
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
-
+# Force links to open in new tabs in Safari
+defaults write com.apple.Safari TargetedClicksCreateTabs -bool true
+# Undo Force links to open in new tabs in Safari
+# defaults delete com.apple.Safari TargetedClicksCreateTabs
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################

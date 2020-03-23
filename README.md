@@ -2,6 +2,10 @@
 
 Ripped off from <https://github.com/peterpme/dotfiles>. Basically took out the stuff I dont use or dont understand.
 
+## .ZSHRC
+
+**Note that this script generates the `~./.zshrc` file in your root directory. That is the file you have to open and some of the code mentioned below. `.zshrc` is not in this repo.**
+
 ## NPM
 
 After running the [first_time_setup.sh](./first_time_setup.sh) script running npm doesnt work until you add [`eval "$(fnm env --multi)"`](https://github.com/Schniz/fnm#manually) to your `~/.zshrc` file.  Then reload/restart your terminal or run `source ~/.zshrc`. You can then run `npm -v` and get some output. I guess this should be setup in the script somewhere -> TODO. Done. Adding the fnm env script produced the following in `.zshrc`:
@@ -31,3 +35,7 @@ source ./exports
 ```
 
 If you want to add paths and extra aliases, you can add them into alias and path. this is loaded by ~/.zshenv
+
+## Other Resources to Consider
+
+[Chezmoi](https://www.chezmoi.io) git dotfiles manager looks really interesting.
