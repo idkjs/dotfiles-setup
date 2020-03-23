@@ -26,7 +26,7 @@ main() {
           --remove 'Podcasts' \
           --remove 'TV' \
           --add /Applications/kitty.app \
-          --add /Applications/iTerm2.app \
+          --add /Applications/iTerm.app \
           --add /Applications/Discord.app \
           &>/dev/null
 
