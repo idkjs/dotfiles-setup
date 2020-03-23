@@ -22,4 +22,11 @@ function __gcd {
   fi
 }
 
+# git clone and cd into cloned repo
 alias gcd='__gcd'
+
+# list all installed apps from mac app store
+alias apps="find /Applications \
+-path '*Contents/_MASReceipt/receipt' \
+-maxdepth 4 -print |\
+sed 's#.app/Contents/_MASReceipt/receipt#.app#g; s#/Applications/##'"
